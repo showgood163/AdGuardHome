@@ -126,31 +126,10 @@ readonly use_shasum
 
 #    os  arch      arm mips
 platforms="\
-darwin   amd64     -   -
-darwin   arm64     -   -
-freebsd  386       -   -
-freebsd  amd64     -   -
-freebsd  arm       5   -
-freebsd  arm       6   -
-freebsd  arm       7   -
-freebsd  arm64     -   -
-linux    386       -   -
 linux    amd64     -   -
-linux    arm       5   -
-linux    arm       6   -
-linux    arm       7   -
+linux    arm       7,softfloat   -
 linux    arm64     -   -
-linux    mips      -   softfloat
-linux    mips64    -   softfloat
-linux    mips64le  -   softfloat
-linux    mipsle    -   softfloat
-linux    ppc64le   -   -
-linux    riscv64   -   -
-openbsd  amd64     -   -
-openbsd  arm64     -   -
-windows  386       -   -
-windows  amd64     -   -
-windows  arm64     -   -"
+windows  amd64     -   -"
 readonly platforms
 
 # Function sign signs the specified build as intended by the target operating
